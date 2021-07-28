@@ -478,7 +478,7 @@ sns.countplot(df['label'], label ="Count")
 
 
     
-![png](output_22_2.png)
+![png](output_22_2.jpg)
     
 
 
@@ -499,7 +499,7 @@ df['length'].plot(bins=100, kind='hist')
 
 
     
-![png](output_24_1.png)
+![png](output_24_1.jpg)
     
 
 
@@ -567,7 +567,7 @@ plt.imshow(WordCloud().generate(sentences_positive))
 
 
     
-![png](output_34_1.png)
+![png](output_34_1.jpg)
     
 
 
@@ -604,7 +604,7 @@ plt.imshow(WordCloud().generate(neutral_sentences))
 
 
     
-![png](output_39_1.png)
+![png](output_39_1.jpg)
     
 
 
@@ -627,7 +627,7 @@ plt.imshow(WordCloud().generate(negative_sentences))
 
 
     
-![png](output_41_1.png)
+![png](output_41_1.jpg)
     
 
 
@@ -726,7 +726,7 @@ sns.heatmap(cm, annot=True)
 
 
     
-![png](output_54_2.png)
+![png](output_54_2.jpg)
     
 
 
@@ -784,7 +784,7 @@ sns.heatmap(cf_matrix, annot=True)
 
 
     
-![png](output_60_2.png)
+![png](output_60_2.jpg)
     
 
 
