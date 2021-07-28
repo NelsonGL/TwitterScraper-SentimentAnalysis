@@ -19,16 +19,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from jupyterthemes import jtplot
 
-#Api Key eOOKGQoNmNTxKn5Lylo7B2oAm
-#Api Key Secret HZKp8YsPJCbQ25oWBiQdtENUp0VGrXd0bb3nEUq5zpnlC1yAB0
-#Bearer Token AAAAAAAAAAAAAAAAAAAAALNlNgEAAAAAZqHsiiabkj8VmL8%2FNPL%2FKW4YyaU%3DYUDhfCpTKAKbDoz9l1rf8Or7520K9uvMNALjxp8HKIkGXLZvSQ
-#Access token 97388220-gHLDvXB0pvm9oDJDLJnoi66bh9NsFzk53uxCn1AqA
-#Access token secret DvQ2yRth9V9gnWFcTRT4JNxlmmiK8q8QwFATc13JsqzHH
 
-CONSUMER_KEY = "eOOKGQoNmNTxKn5Lylo7B2oAm"
-CONSUMER_SECRET = "HZKp8YsPJCbQ25oWBiQdtENUp0VGrXd0bb3nEUq5zpnlC1yAB0"
-ACCESS_TOKEN = "97388220-gHLDvXB0pvm9oDJDLJnoi66bh9NsFzk53uxCn1AqA"
-ACCESS_TOKEN_SECRET = "DvQ2yRth9V9gnWFcTRT4JNxlmmiK8q8QwFATc13JsqzHH"
+
+CONSUMER_KEY = "Yourkey"
+CONSUMER_SECRET = "Yourkey"
+ACCESS_TOKEN = "Yourkey"
+ACCESS_TOKEN_SECRET = "Yourkey"
 
 def auth():
     try:
