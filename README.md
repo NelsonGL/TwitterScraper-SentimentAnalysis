@@ -95,20 +95,6 @@ search_by_hashtag(api, date_since, date_until, words)
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -263,19 +249,7 @@ df.describe()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -461,19 +435,6 @@ df['label'] = label
 sns.countplot(df['label'], label ="Count")
 ```
 
-    C:\Users\nosle\.conda\envs\football_project\lib\site-packages\seaborn\_decorators.py:36: FutureWarning: Pass the following variable as a keyword arg: x. From version 0.12, the only valid positional argument will be `data`, and passing other arguments without an explicit keyword will result in an error or misinterpretation.
-      warnings.warn(
-    
-
-
-
-
-    <AxesSubplot:xlabel='label', ylabel='count'>
-
-
-
-
-    
 ![png](output_22_2.jpg)
     
 
@@ -485,14 +446,6 @@ sns.countplot(df['label'], label ="Count")
 df['length'] = df['text'].apply(len)
 df['length'].plot(bins=100, kind='hist') 
 ```
-
-
-
-
-    <AxesSubplot:ylabel='Frequency'>
-
-
-
 
     
 ![png](output_24_1.jpg)
@@ -557,11 +510,6 @@ plt.imshow(WordCloud().generate(sentences_positive))
 
 
 
-    <matplotlib.image.AxesImage at 0x1e85f367fd0>
-
-
-
-
     
 ![png](output_34_1.jpg)
     
@@ -592,13 +540,6 @@ plt.imshow(WordCloud().generate(neutral_sentences))
 ```
 
 
-
-
-    <matplotlib.image.AxesImage at 0x1425e35a520>
-
-
-
-
     
 ![png](output_39_1.jpg)
     
@@ -613,13 +554,6 @@ sentences_as_one_string = " ".join(negative_sentences)
 plt.figure(figsize=(20,20))
 plt.imshow(WordCloud().generate(negative_sentences))
 ```
-
-
-
-
-    <matplotlib.image.AxesImage at 0x1425e3c17c0>
-
-
 
 
     
@@ -708,18 +642,6 @@ cm = np.transpose( np.transpose(cm) / cm.astype(np.float).sum(axis=1) )
 sns.heatmap(cm, annot=True)
 ```
 
-    <ipython-input-93-2c309947a687>:3: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-    Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-      cm = np.transpose( np.transpose(cm) / cm.astype(np.float).sum(axis=1) )
-    
-
-
-
-
-    <AxesSubplot:>
-
-
-
 
     
 ![png](output_54_2.jpg)
@@ -766,20 +688,7 @@ cf_matrix = np.transpose( np.transpose(cf_matrix) / cf_matrix.astype(np.float).s
 sns.heatmap(cf_matrix, annot=True)
 ```
 
-    <ipython-input-97-e5139e2a0d7b>:2: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
-    Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
-      cf_matrix = np.transpose( np.transpose(cf_matrix) / cf_matrix.astype(np.float).sum(axis=1) )
-    
 
-
-
-
-    <AxesSubplot:>
-
-
-
-
-    
 ![png](output_60_2.jpg)
     
 
